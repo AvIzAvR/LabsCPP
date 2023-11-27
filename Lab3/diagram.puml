@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+computer <|-- dekstop
+dekstop <|-- monoblock
+
+computer <|-- portalble
+portalble <|-- laptop
+portalble <|-- tablet
+
+class computer {
+ char brand[50];
+ char model[50];
+ char videocard[50];
+}
+
+class dekstop{
+    char corpus[50];
+    int memorySize;
+}
+
+class monoblock{
+    double diagonal;
+    char motherboard[50];
+}
+
+class portalble {
+    int change;
+    double diagonal;
+    bool camera;
+}
+
+class laptop{
+    int keys;
+    bool fingerprint;
+}
+
+class tablet {
+    char modem[50];
+    int megapixels;
+}
+@enduml
