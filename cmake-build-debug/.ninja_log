@@ -1,0 +1,6 @@
+# ninja log v5
+8	774	7228007044701444	Lab1/CMakeFiles/Lab1.dir/Lab1lib.cpp.obj	2ac98f421fbde90d
+1	797	7228007044923304	Lab1/CMakeFiles/Lab1.dir/main.cpp.obj	184239d53ba87dca
+797	988	7228007046758984	Lab1/Lab1.exe	751e9296d4dc0aea
+0	706	7228007226768809	Lab2/CMakeFiles/Lab2.dir/main.cpp.obj	d1f06a13019e7c95
+707	866	7228007228329506	Lab2/Lab2.exe	b7fdf5b885092943

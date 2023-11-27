@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Lab1",
+					"jsonFile" : "directory-Lab1-Debug-202a319537442fe8fc9a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Lab1",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Lab2",
+					"jsonFile" : "directory-Lab2-Debug-01b6404db09f5506bcba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Lab2",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Lab3",
+					"jsonFile" : "directory-Lab3-Debug-0832534b61fdc785b448.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Lab3",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Lab4",
+					"jsonFile" : "directory-Lab4-Debug-a05d83b0bb10bc1922a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "Lab4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LabsCPP"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Lab1",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Lab2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Lab3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Lab4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Lab1::@5a1b8e29de7eac97aaf2",
+					"jsonFile" : "target-Lab1-Debug-a4d6bbf35d951ed8c26a.json",
+					"name" : "Lab1",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Lab2::@ddf8a858c26d266b6369",
+					"jsonFile" : "target-Lab2-Debug-1a4c624ea38508939546.json",
+					"name" : "Lab2",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Lab3::@31c881f0d78bf0ea4866",
+					"jsonFile" : "target-Lab3-Debug-20c604963eb113b71894.json",
+					"name" : "Lab3",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Lab4::@5c81e26031b5056dc214",
+					"jsonFile" : "target-Lab4-Debug-2d1a3370f068c332f5d5.json",
+					"name" : "Lab4",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/gitHub/LabsCPP/cmake-build-debug",
+		"source" : "C:/gitHub/LabsCPP"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
