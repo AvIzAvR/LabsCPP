@@ -22,7 +22,7 @@ void stack<T>::print() {
         for (int i = size - 1; i != -1; i--)
             std::cout << data[i] << std::endl;
     } else
-        throw ExpStackEmpty();
+        throw ExpStackEmpty(3, "Stack is empty");
 }
 
 template<class T>
@@ -35,7 +35,7 @@ void stack<T>::push(T d) {
         data = temp;
         size++;
     } else {
-        throw ExpStackOverflow();
+        throw ExpStackOverflow(1, "StackOverflow");
     }
 }
 
@@ -48,7 +48,7 @@ void stack<T>::pop() {
         delete[] data;
         data = temp;
     } else {
-        throw ExpUnderflow();
+        throw ExpUnderflow(2, "Stack Underflow");
     }
 }
 
@@ -58,6 +58,6 @@ T stack<T>::peek() {
         return data[size - 1];
     }
     else
-        throw ExpStackEmpty();
+        throw ExpStackEmpty(3, "Stack is empty");
 }
 

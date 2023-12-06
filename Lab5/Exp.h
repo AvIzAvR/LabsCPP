@@ -20,23 +20,32 @@ public:
 
 class ExpStackOverflow : public Exp{
 public:
-    ExpStackOverflow() : Exp(1, "StackOverflow") {};
+    ExpStackOverflow(int code_t, char* msg_t) : Exp(code_t,msg_t) {};
 };
 
 class ExpUnderflow : public Exp {
 public:
-    ExpUnderflow() : Exp(2, "Stack Underflow") {};
+    ExpUnderflow(int code_t, char* msg_t) : Exp(code_t,msg_t) {};
 };
 
 class ExpStackEmpty : public Exp {
 public:
-    ExpStackEmpty() : Exp(3, "Stack is empty") {};
+    ExpStackEmpty(int code_t, char* msg_t) : Exp(code_t,msg_t) {};
 };
 
 
 class ExpInput : public Exp{
 public:
-    ExpInput() : Exp(4, "Invalid input. Not an integer.") {};
+    ExpInput(int code_t, char* msg_t) : Exp(code_t,msg_t) {};
 };
 
+class ExpFile : public Exp{
+public:
+    ExpFile(int code_t, char* msg_t) : Exp(code_t, msg_t) {};
+};
+
+class ExpCout : public Exp{
+public:
+    ExpCout(int code_t, char* msg_t) : Exp(code_t, msg_t) {};
+};
 #endif//LABSCPP_EXP_H

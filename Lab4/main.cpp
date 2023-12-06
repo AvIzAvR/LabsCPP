@@ -19,10 +19,10 @@ int main() {
         std::string str;
         int number;
         std::cout << "Write elements:" << std::endl;
-        for(int i = 0; i < MAX_SIZE; i++) {
+        for(int i = 0; i < 4; i++) {
             std::cin >> str;
             if (!isInteger(str)) {
-                throw ExpInput();
+                throw ExpInput(4, "Invalid input. Not an integer.");
             }
             std::stringstream convert(str);
             convert >> number;
