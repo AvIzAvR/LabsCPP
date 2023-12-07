@@ -3,6 +3,7 @@
 
 #include "cstring"
 #include "iostream"
+#include "Exp.h"
 
 class Exp {
     int code;
@@ -47,5 +48,10 @@ public:
 class ExpCout : public Exp{
 public:
     ExpCout(int code_t, char* msg_t) : Exp(code_t, msg_t) {};
+};
+
+class ExpStringData : public Exp{
+public:
+    ExpStringData(int code_t, char* msg_t) : Exp(code_t, msg_t) {};
 };
 #endif//LABSCPP_EXP_H

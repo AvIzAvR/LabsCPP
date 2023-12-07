@@ -215,6 +215,13 @@ build Lab3/CMakeFiles/Lab3.dir/main.cpp.obj: CXX_COMPILER__Lab3_unscanned_Debug 
   OBJECT_DIR = Lab3\CMakeFiles\Lab3.dir
   OBJECT_FILE_DIR = Lab3\CMakeFiles\Lab3.dir
 
+build Lab3/CMakeFiles/Lab3.dir/Lab3.cpp.obj: CXX_COMPILER__Lab3_unscanned_Debug C$:/gitHub/LabsCPP/Lab3/Lab3.cpp || cmake_object_order_depends_target_Lab3
+  DEP_FILE = Lab3\CMakeFiles\Lab3.dir\Lab3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/gitHub/LabsCPP/Lab1 -IC:/gitHub/LabsCPP/Lab2 -IC:/gitHub/LabsCPP/Lab3 -IC:/gitHub/LabsCPP/Lab4 -IC:/gitHub/LabsCPP/Lab5
+  OBJECT_DIR = Lab3\CMakeFiles\Lab3.dir
+  OBJECT_FILE_DIR = Lab3\CMakeFiles\Lab3.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab3
@@ -223,7 +230,7 @@ build Lab3/CMakeFiles/Lab3.dir/main.cpp.obj: CXX_COMPILER__Lab3_unscanned_Debug 
 #############################################
 # Link the executable Lab3\Lab3.exe
 
-build Lab3/Lab3.exe: CXX_EXECUTABLE_LINKER__Lab3_Debug Lab3/CMakeFiles/Lab3.dir/main.cpp.obj
+build Lab3/Lab3.exe: CXX_EXECUTABLE_LINKER__Lab3_Debug Lab3/CMakeFiles/Lab3.dir/main.cpp.obj Lab3/CMakeFiles/Lab3.dir/Lab3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Lab3\CMakeFiles\Lab3.dir
@@ -277,6 +284,13 @@ build Lab4/CMakeFiles/Lab4.dir/main.cpp.obj: CXX_COMPILER__Lab4_unscanned_Debug 
   OBJECT_DIR = Lab4\CMakeFiles\Lab4.dir
   OBJECT_FILE_DIR = Lab4\CMakeFiles\Lab4.dir
 
+build Lab4/CMakeFiles/Lab4.dir/stack.cpp.obj: CXX_COMPILER__Lab4_unscanned_Debug C$:/gitHub/LabsCPP/Lab4/stack.cpp || cmake_object_order_depends_target_Lab4
+  DEP_FILE = Lab4\CMakeFiles\Lab4.dir\stack.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/gitHub/LabsCPP/Lab1 -IC:/gitHub/LabsCPP/Lab2 -IC:/gitHub/LabsCPP/Lab3 -IC:/gitHub/LabsCPP/Lab4 -IC:/gitHub/LabsCPP/Lab5
+  OBJECT_DIR = Lab4\CMakeFiles\Lab4.dir
+  OBJECT_FILE_DIR = Lab4\CMakeFiles\Lab4.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab4
@@ -285,7 +299,7 @@ build Lab4/CMakeFiles/Lab4.dir/main.cpp.obj: CXX_COMPILER__Lab4_unscanned_Debug 
 #############################################
 # Link the executable Lab4\Lab4.exe
 
-build Lab4/Lab4.exe: CXX_EXECUTABLE_LINKER__Lab4_Debug Lab4/CMakeFiles/Lab4.dir/main.cpp.obj
+build Lab4/Lab4.exe: CXX_EXECUTABLE_LINKER__Lab4_Debug Lab4/CMakeFiles/Lab4.dir/main.cpp.obj Lab4/CMakeFiles/Lab4.dir/stack.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Lab4\CMakeFiles\Lab4.dir
@@ -339,6 +353,13 @@ build Lab5/CMakeFiles/Lab5.dir/main.cpp.obj: CXX_COMPILER__Lab5_unscanned_Debug 
   OBJECT_DIR = Lab5\CMakeFiles\Lab5.dir
   OBJECT_FILE_DIR = Lab5\CMakeFiles\Lab5.dir
 
+build Lab5/CMakeFiles/Lab5.dir/Exp.cpp.obj: CXX_COMPILER__Lab5_unscanned_Debug C$:/gitHub/LabsCPP/Lab5/Exp.cpp || cmake_object_order_depends_target_Lab5
+  DEP_FILE = Lab5\CMakeFiles\Lab5.dir\Exp.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/gitHub/LabsCPP/Lab1 -IC:/gitHub/LabsCPP/Lab2 -IC:/gitHub/LabsCPP/Lab3 -IC:/gitHub/LabsCPP/Lab4 -IC:/gitHub/LabsCPP/Lab5
+  OBJECT_DIR = Lab5\CMakeFiles\Lab5.dir
+  OBJECT_FILE_DIR = Lab5\CMakeFiles\Lab5.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Lab5
@@ -347,7 +368,7 @@ build Lab5/CMakeFiles/Lab5.dir/main.cpp.obj: CXX_COMPILER__Lab5_unscanned_Debug 
 #############################################
 # Link the executable Lab5\Lab5.exe
 
-build Lab5/Lab5.exe: CXX_EXECUTABLE_LINKER__Lab5_Debug Lab5/CMakeFiles/Lab5.dir/main.cpp.obj
+build Lab5/Lab5.exe: CXX_EXECUTABLE_LINKER__Lab5_Debug Lab5/CMakeFiles/Lab5.dir/main.cpp.obj Lab5/CMakeFiles/Lab5.dir/Exp.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Lab5\CMakeFiles\Lab5.dir
