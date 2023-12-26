@@ -19,7 +19,7 @@ int main() {
         std::string str;
         int number;
         std::cout << "Write elements:" << std::endl;
-        for(int i = 0; i < 4; i++) {
+        for(int i = 0; i < MAX_SIZE; i++) {
             std::cin >> str;
             if (!isInteger(str)) {
                 throw ExpInput(4, "Invalid input. Not an integer.");
@@ -34,17 +34,18 @@ int main() {
         return 0;
     }
 
-    myStack.print();
+    auto it = myStack.begin();
+    myStack.printIterator(it);
+    ++it;
+    myStack.printIterator(it);
+    it = myStack.search(3);
+    myStack.printIterator(it);
 
-    try {
-        while(true) {
-            std::cout << "Top element: " << myStack.peek() << std::endl;
-            myStack.pop();
-        }
-    }
-    catch (Exp& e) {
-        e.show();
-    }
+    int x = myStack.accumulate(2);
+    std::cout << "Sum:" << x << std::endl;
+
+
+
 
 
 

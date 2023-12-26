@@ -18,15 +18,12 @@ bool stack<T>::isNull() {
 
 template<class T>
 void stack<T>::print() {
-    if (!isNull()) {
-        for (int i = size - 1; i != -1; i--)
+        for (int i = 0; i < size; i++)
             std::cout << data[i] << std::endl;
-    } else
-        throw ExpStackEmpty(3, "Stack is empty");
 }
 
 template<class T>
-void stack<T>::push(T d) {
+void stack<T>::push(const T d) {
     if (!isFull()) {
         T *temp = new T[size + 1];
         std::copy(data, data + size, temp);
@@ -38,6 +35,7 @@ void stack<T>::push(T d) {
         throw ExpStackOverflow(1, "StackOverflow");
     }
 }
+
 
 template<class T>
 void stack<T>::pop() {
@@ -61,3 +59,29 @@ T stack<T>::peek() {
         throw ExpStackEmpty(3, "Stack is empty");
 }
 
+template <typename T>
+void stack<T>::printStack() {
+    for (auto it = begin(); it != end(); ++it) {
+        std::cout << *it << std::endl;
+    }
+}
+
+template<class T>
+typename stack<T>::iterator stack<T>::search(const T& value) {
+    for (auto it = this->begin(); it != this->end(); ++it) {
+        if (*it == value) {
+            return it;
+        }
+    }
+    std::cout << "Element not found" << std::endl;
+    return this->end();
+}
+
+template <typename T>
+T stack<T>::accumulate(const T& init) {
+    T sum = init;
+    for (auto it = this->begin(); it != this->end(); ++it) {
+        sum = sum + *it;
+    }
+    return sum;
+}

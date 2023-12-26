@@ -15,10 +15,7 @@ void inputComputerData(computer* cmp) {
 
     std::cout << "Enter computer brand: ";
     std::cin >> brand;
-    if(isValidData(brand))
-        cmp->setBrand(brand);
-    else
-        throw ExpStringData(5, "Invalid input. Not string");
+    cmp->setBrand(brand);
 
     std::cout << "Enter computer model: ";
     std::cin >> model;

@@ -21,14 +21,24 @@ public:
     char* getVideoCard() {
         return videocard;
     }
-    void setBrand(char br[50]) {
-        strcpy(this->brand, br);
+    void setBrand(const char br[50]) {
+        strcpy(brand, br);
     }
-    void setModel(char md[50]) {
-        strcpy(this->brand, md);
+    void setModel(const char md[50]) {
+        strcpy(model, md);
     }
-    void setVideoCard(char vd[50]) {
-        strcpy(this->videocard, vd);
+    void setVideoCard(const char vd[50]) {
+        strcpy(videocard, vd);
+    }
+
+    friend std::ostream& operator<<(std::ostream& os, const computer& cmp) {
+        os << cmp.brand << " " << cmp.model << " " << cmp.videocard;
+        return os;
+    }
+
+    friend std::istream& operator>>(std::istream& is, computer& cmp) {
+        is >> cmp.brand >> cmp.model >> cmp.videocard;
+        return is;
     }
 };
 
